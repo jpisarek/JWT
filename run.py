@@ -34,3 +34,5 @@ import views, models, resources
 api.add_resource(resources.RegistrationWithGenerateToken, '/registration')
 api.add_resource(resources.LoginWithGenerateToken, '/login')
 api.add_resource(resources.CheckIfTokenIsExspiered, '/check')
+api.add_resource(resources.AllRecipe, '/recipe')
+api.add_resource(resources.AllIngredient, '/ingredient')

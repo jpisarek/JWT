@@ -3,4 +3,4 @@ from flask import jsonify
 
 @app.route('/')
 def index():
-    return jsonify({'message': 'Program stworzony na potrzeby zadania rekrutacyjnego.'})
+    return jsonify({'message': 'The programme created for the recruitment task'})
