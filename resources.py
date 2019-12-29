@@ -79,7 +79,7 @@ class AllRecipe(Resource):
         except:
             return {'message': 'Something went wrong'}, 500
 
-    # @jwt_required
+    @jwt_required
     def get(self):
         return RecipeModel.return_all()
 
@@ -99,7 +99,7 @@ class AllIngredient(Resource):
         except:
             return {'message': 'Something went wrong'}, 500
 
-    # @jwt_required
+    @jwt_required
     def get(self):
 
         recipes = RecipeModel.query.all()
